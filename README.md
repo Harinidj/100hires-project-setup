@@ -56,28 +56,58 @@ My repository was created without a README file, so I created a new `README.md` 
 
 ---
 
-## Challenges I Faced
+## Challenges I Faced & My Approaches
 
-### Understanding a New IDE
+While finishing up the tool configurations and preparing to push my final updates, I encountered four real-world technical and configuration roadblocks. Here is exactly what went wrong and how I successfully troubleshooted them:
 
-Since this was my first time using Cursor, I wasn't familiar with its workflow. I initially had trouble finding the correct editor and understanding the difference between the Agent interface and the code editor.
+### 1. Git Configuration Pager Loop
+While running basic environment configuration checks in the integrated terminal, PowerShell suddenly trapped me inside an interactive text stream showing lines marked with `...skipping...`. The terminal froze up and refused to accept any new commands.
+- **How I solved it:** I recognized that Git was routing the text stream through the default system pager utility (`less`). I bypassed the loop instantly by pressing `q` on my keyboard to close the pager window and restore the active terminal prompt.
 
-**How I solved it:**
-I explored the interface step by step and learned how the different sections of Cursor work.
+### 2. Windows Credential Manager Push Rejection
+When I attempted to execute my initial code push (`git push`), Git threw an authentication failure warning stating `Invalid username or token`. It continuously rejected my authorization despite my login details being entirely accurate.
+- **How I solved it:** I diagnosed that the Windows Credential Manager on my PC was holding onto an outdated, expired GitHub token from a past coding session, which was overriding my new login requests. 
+  1. Opened **Windows Credential Manager** via the Control Panel.
+  2. Located the broken entry under **Generic Credentials** for `git:https://github.com`.
+  3. Removed the stale credentials completely.
+  4. Executed `git push` again, which smoothly prompted the standard browser-based GitHub authorization flow and completed the push.
 
-### Cloning the Repository
+### 3. Claude Code Credit Balance Limit
+After installing the Claude Code extension, I initiated the login flow. The browser redirect successfully authenticated my Anthropic account but then displayed a prompt to purchase commercial Console API usage credits or sign up for a premium plan. Back in Cursor, the extension interface successfully updated past the login window to show a live text input box stating *"Ask Claude to edit..."*. 
+- **How I solved it:** To confirm whether the extension was fully active on the free tier, I ran a direct functional check by submitting a test message (`hello, are u working`). The extension processed the request but returned a server-side warning: `Credit balance is too low`. I successfully documented this structural monetization limit as part of my tool assessment.
 
-At first, I assumed opening a project would directly access my GitHub repository. I later understood that the repository had to be cloned locally before it could be edited.
+### 4. Codex Operating System Incompatibility
+When trying to run terminal commands to verify the secondary Codex extension framework, PowerShell generated a standard missing program alert (`CommandNotFoundException`).
+- **How I solved it:** I reviewed the extension’s documentation on the marketplace dashboard and noticed it explicitly states: **`(MacOS only) Work with the ChatGPT macOS app`**. Because my local system runs on Windows, the command line interface cannot execute it natively. I documented this OS-level environment boundary accordingly.
 
-**How I solved it:**
-After authorizing GitHub in Cursor, I selected my repository from the available list and cloned it successfully.
+---
 
-### Creating the README
+## Verification Screenshots
 
-I noticed my repository didn't contain a README file.
+I have mapped out the visual records of my configuration process, workspace tracking updates, and extension tests below:
 
-**How I solved it:**
-I created the README manually and documented every step of the setup process.
+### A. Git Tracking & Synchronization
+- **Reference File:** `Screenshot (383).png` 
+  *(Displays successful terminal branch tracking updates, clean working trees, and successful repository push indicators)*
+
+### B. Marketplace Extension Installations
+- **Reference File:** `Screenshot (384).png` 
+  *(Confirms successful deployment of Anthropic's Claude Code extension directly inside the Cursor workspace IDE)*
+
+### C. Authentication Handshake Flows
+- **Reference Files:** 
+  - `Screenshot (386).png` *(The extension integration options panel in Cursor)*
+  - `Screenshot (387).png` *(The browser-side subscription requirement alert)*
+  - `Screenshot (389).png` *(The Anthropic Console billing setup interface)*
+
+### D. Claude Code Live Functional Testing
+- **Reference Files:** 
+  - `image_99e06a.jpg` *(The unlocked input interface container prompting "Ask Claude to edit...")*
+  - `image_99e42c.png` *(The active tool test showing the final server-side "Credit balance is too low" error catch)*
+
+### E. Codex OS Environment Parameters
+- **Reference File:** `image_9a3edc.jpg` 
+  *(The extension summary verifying the explicit macOS system restriction)*
 
 ---
 
@@ -85,9 +115,12 @@ I created the README manually and documented every step of the setup process.
 
 Completing this setup helped me become familiar with:
 
-- Using Cursor IDE
-- Connecting GitHub with Cursor
-- Installing and configuring Cursor extensions
-- Cloning GitHub repositories
-- Creating and maintaining documentation using Markdown
-- Learning a new development tool independently by researching and experimenting
+- Using Cursor IDE and navigating its custom workspace windows
+- Connecting GitHub with Cursor and managing secure authentication pipelines
+- Tracking down and deleting outdated system-cached keys via Windows Credential Manager
+- Reading documentation carefully to identify OS-specific compatibility limitations (macOS vs. Windows)
+- Intercepting terminal pager traps (`less`) and logging detailed API server errors
+- Creating and maintaining structured documentation using Markdown to clearly track technical hurdles independently
+
+---
+*Documentation updated on June 27, 2026.*
