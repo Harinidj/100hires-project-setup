@@ -132,4 +132,5 @@ Completing this setup helped me become familiar with:
 - Creating and maintaining structured documentation using Markdown to clearly track technical hurdles independently
 
 ---
+*Harini DJ*
 *Documentation updated on June 27, 2026.*
