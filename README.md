@@ -87,35 +87,45 @@ When trying to run terminal commands to verify the secondary Codex extension fra
 I have mapped out the visual records of my configuration process, workspace tracking updates, and extension tests below:
 
 ### A. Git Tracking & Synchronization
-- **Reference File:** `<img width="1920" height="1080" alt="Screenshot (383)" src="https://github.com/user-attachments/assets/c4178a71-8f78-49e2-98e2-ba63a4b7e372" />
-` 
+- **Reference File:**
+<img width="1920" height="1080" alt="Screenshot (383)" src="https://github.com/user-attachments/assets/c4178a71-8f78-49e2-98e2-ba63a4b7e372" />
+ 
   *(Displays successful terminal branch tracking updates, clean working trees, and successful repository push indicators)*
 
 ### B. Marketplace Extension Installations
-- **Reference File:** `<img width="1920" height="1080" alt="Screenshot (384)" src="https://github.com/user-attachments/assets/b249b68e-c9cc-439a-a8d8-394b6a343db5" /> `<img width="1920" height="1080" alt="Screenshot (385)" src="https://github.com/user-attachments/assets/161717ba-48c4-485c-aad4-6f8733b60b8b" />
-`
-` 
+- **Reference File:**
+<img width="1920" height="1080" alt="Screenshot (384)" src="https://github.com/user-attachments/assets/b249b68e-c9cc-439a-a8d8-394b6a343db5" />
+<img width="1920" height="1080" alt="Screenshot (385)" src="https://github.com/user-attachments/assets/161717ba-48c4-485c-aad4-6f8733b60b8b" />
+
   *(Confirms successful deployment of Anthropic's Claude Code extension directly inside the Cursor workspace IDE)*
 
 ### C. Authentication Handshake Flows
 - **Reference Files:** 
-  - `<img width="1920" height="1080" alt="Screenshot (389)" src="https://github.com/user-attachments/assets/8f6e42c7-2a34-4799-b227-889cb52ee718" />
-` *(The extension integration options panel in Cursor)*
-  - `S<img width="1920" height="1080" alt="Screenshot (386)" src="https://github.com/user-attachments/assets/1a368772-235e-4f43-bb4b-72582f15d814" />
-` *(The browser-side subscription requirement alert)*
-  - `<img width="1920" height="1080" alt="Screenshot (387)" src="https://github.com/user-attachments/assets/b898f444-9736-4683-b167-f12a850a88bc" />
-` *(The Anthropic Console billing setup interface)*
+<img width="1920" height="1080" alt="Screenshot (389)" src="https://github.com/user-attachments/assets/8f6e42c7-2a34-4799-b227-889cb52ee718" />
+
+ *(The extension integration options panel in Cursor)*
+ 
+<img width="1920" height="1080" alt="Screenshot (386)" src="https://github.com/user-attachments/assets/1a368772-235e-4f43-bb4b-72582f15d814" />
+
+ *(The browser-side subscription requirement alert)*
+ 
+<img width="1920" height="1080" alt="Screenshot (387)" src="https://github.com/user-attachments/assets/b898f444-9736-4683-b167-f12a850a88bc" />
+
+ *(The Anthropic Console billing setup interface)*
 
 ### D. Claude Code Live Functional Testing
 - **Reference Files:** 
-  - `<img width="1920" height="1080" alt="Screenshot (388)" src="https://github.com/user-attachments/assets/058fcbd6-da5a-4401-a7ff-6238e3a83a0f" />
-g` *(The unlocked input interface container prompting "Ask Claude to edit...")*
-  - `<img width="1920" height="1080" alt="Screenshot (390)" src="https://github.com/user-attachments/assets/20223fa0-14f0-4a7f-93e4-4448ecb1e303" />
-` *(The active tool test showing the final server-side "Credit balance is too low" error catch)*
+<img width="1920" height="1080" alt="Screenshot (388)" src="https://github.com/user-attachments/assets/058fcbd6-da5a-4401-a7ff-6238e3a83a0f" />
+
+ *(The unlocked input interface container prompting "Ask Claude to edit...")*
+<img width="1920" height="1080" alt="Screenshot (390)" src="https://github.com/user-attachments/assets/20223fa0-14f0-4a7f-93e4-4448ecb1e303" />
+
+ *(The active tool test showing the final server-side "Credit balance is too low" error catch)*
 
 ### E. Codex OS Environment Parameters
-- **Reference File:** `<img width="1920" height="1080" alt="Screenshot (392)" src="https://github.com/user-attachments/assets/6e46f83b-b150-4c88-9458-ef6d71b93fa8" />
-` 
+- **Reference File:**
+<img width="1920" height="1080" alt="Screenshot (392)" src="https://github.com/user-attachments/assets/6e46f83b-b150-4c88-9458-ef6d71b93fa8" />
+ 
   *(The extension summary verifying the explicit macOS system restriction)*
 
 ---
